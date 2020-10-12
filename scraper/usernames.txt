@@ -1,9 +1,12 @@
+cdcgov
+who
 teenvogue
 cnn
 wsj
 financialtimes
 narendramodi
 the_hindu
+ndtv
 unitedntions
 colorpalette.cinema
 btsport

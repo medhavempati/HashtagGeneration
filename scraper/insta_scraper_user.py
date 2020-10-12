@@ -54,7 +54,11 @@ def scraper(username = None, maxPostLimit = None, maxCommentLimit = None):
 			continue
 		except:
 			raise
-	df.to_csv(f'User_based_posts/{username}.csv', sep =',',encoding = 'utf-8')
+    
+    if not os.path.isdir('./data'):
+        os.mkdir('./data')
+
+	df.to_csv(f'data/{username}.csv', sep =',',encoding = 'utf-8')
 
 if __name__ == '__main__':
 

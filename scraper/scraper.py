@@ -12,7 +12,7 @@ class QueryReturnedNotFoundException(InstaloaderException):
 	'''Copied from source code to hadnle error'''
 	pass
 
-def scraper(username = None, maxPostLimit = None, maxCommentLimit = None):
+def scraper(username = None, maxPostLimit = None, maxCommentLimit = None, set_no = None):
     L = instaloader.Instaloader(sleep = False,max_connection_attempts = 10)
     profile = instaloader.Profile.from_username(L.context, username)
     colName = ['ID','shortcode','text','hashtags','comments','likes']
@@ -33,7 +33,7 @@ def scraper(username = None, maxPostLimit = None, maxCommentLimit = None):
             hashtagList = ' '.join([hashtag for hashtag in post.caption_hashtags])
 			# print(hashtagList)
             if listOfComments and hashtagList:
-                df.loc[seq] = ['','',caption.replace(',',''),hashtagList,listOfComments,likes]
+                df.loc[f'{set_no}.{seq}'] = ['','',caption.replace(',',''),hashtagList,listOfComments,likes]
                 if seq % 10 == 0:
                     print(seq)
                 seq += 1
@@ -52,27 +52,35 @@ def scraper(username = None, maxPostLimit = None, maxCommentLimit = None):
 
 if __name__ == '__main__':
 
+    f = open('usernames.txt', 'r')
+    username_list = f.readlines()
+    f.close()
+    set_no = 1
 
-	user,maxPostLimit,maxCommentLimit,seedHashtag = '',0,0,[]
+    for u in username_list:
 
-	try:
-		user = sys.argv[1]							# Mandatory argument
-	except IndexError:
-		print('Error: Scraper Needs a User Name')
-		sys.exit(1)
+        user,maxPostLimit,maxCommentLimit,seedHashtag = '',0,0,[]
 
-	try:
-		maxPostLimit = int(sys.argv[2])				# Optional argument
-	except IndexError:
-		maxPostLimit = 100
-	except:
-		raise
+        try:
+            user = u							# Mandatory argument
+        except IndexError:
+            print('Error: Scraper Needs a User Name')
+            sys.exit(1)
 
-	try:
-		maxCommentLimit = int(sys.argv[3])			# Optional argument
-	except IndexError:
-		maxCommentLimit = 10
-	except:
-		raise
+        try:
+            maxPostLimit = int(sys.argv[2])				# Optional argument
+        except IndexError:
+            maxPostLimit = 200
+        except:
+            raise
 
-	scraper(user,maxPostLimit,maxCommentLimit)
+        try:
+            maxCommentLimit = int(sys.argv[3])			# Optional argument
+        except IndexError:
+            maxCommentLimit = 10
+        except:
+            raise
+
+        scraper(user,maxPostLimit,maxCommentLimit, set_no)
+
+        set_no += 1
