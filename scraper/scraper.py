@@ -52,12 +52,12 @@ def scraper(username = None, maxPostLimit = None, maxCommentLimit = None, set_no
 
 if __name__ == '__main__':
 
-    f = open('usernames.txt', 'r')
-    username_list = f.readlines()
-    f.close()
+    username_list = ['cdcgov', 'who', 'teenvogue', 'cnn', 'wsj', 'financialtimes', 'narendramodi', 'the_hindu', 'ndtv', 'unitedntions', 'colorpalette.cinema', 'btsport', 'espn', 'blklivesmatter', 'discovery', 'enews', 'instantbollywood', 'gadgetflow' , 'nvidia']
     set_no = 1
 
     for u in username_list:
+
+        print(f'|{u}|')
 
         user,maxPostLimit,maxCommentLimit,seedHashtag = '',0,0,[]
 
@@ -71,15 +71,15 @@ if __name__ == '__main__':
             maxPostLimit = int(sys.argv[2])				# Optional argument
         except IndexError:
             maxPostLimit = 200
-        except:
-            raise
+        except Exception as e:
+            print(e)
 
         try:
             maxCommentLimit = int(sys.argv[3])			# Optional argument
         except IndexError:
             maxCommentLimit = 10
-        except:
-            raise
+        except Exception as e:
+            print(e)
 
         scraper(user,maxPostLimit,maxCommentLimit, set_no)
 
