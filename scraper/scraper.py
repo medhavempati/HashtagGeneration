@@ -3,6 +3,7 @@ import pandas as pd
 import sys
 import os
 import re
+import time
 
 class InstaloaderException(Exception):
 	'''Copied from source code to hadnle error'''
@@ -19,10 +20,12 @@ def scraper(username = None, maxPostLimit = None, maxCommentLimit = None, set_no
     df = pd.DataFrame(columns = colName)
     seq = 1
     for post in profile.get_posts():
+        sleep(15)
         postid,shortcode,caption,likes,hashtagList = '','','',0,''
         listOfComments = ''
         try:
             allComments = post.get_comments()
+            sleep(15)
             caption = post.caption
             i = 0
             for itr in allComments:
@@ -30,6 +33,7 @@ def scraper(username = None, maxPostLimit = None, maxCommentLimit = None, set_no
                 if i > maxCommentLimit:
                     break
             likes = post.likes
+            sleep(10)
             hashtagList = ' '.join([hashtag for hashtag in post.caption_hashtags])
 			# print(hashtagList)
             if listOfComments and hashtagList:
@@ -52,8 +56,8 @@ def scraper(username = None, maxPostLimit = None, maxCommentLimit = None, set_no
 
 if __name__ == '__main__':
 
-    username_list = ['cnn', 'wsj', 'financialtimes', 'narendramodi', 'the_hindu', 'ndtv', 'unitedntions', 'colorpalette.cinema', 'btsport', 'espn', 'blklivesmatter', 'discovery', 'enews', 'instantbollywood', 'gadgetflow' , 'nvidia']
-    set_no = 4
+    username_list = ['narendramodi', 'the_hindu', 'ndtv']
+    set_no = 7
 
     for u in username_list:
 
@@ -84,3 +88,4 @@ if __name__ == '__main__':
         scraper(user,maxPostLimit,maxCommentLimit, set_no)
 
         set_no += 1
+        sleep(20)
