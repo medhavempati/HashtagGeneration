@@ -20,12 +20,12 @@ def scraper(username = None, maxPostLimit = None, maxCommentLimit = None, set_no
     df = pd.DataFrame(columns = colName)
     seq = 1
     for post in profile.get_posts():
-        sleep(15)
+        time.sleep(15)
         postid,shortcode,caption,likes,hashtagList = '','','',0,''
         listOfComments = ''
         try:
             allComments = post.get_comments()
-            sleep(15)
+            time.sleep(15)
             caption = post.caption
             i = 0
             for itr in allComments:
@@ -33,7 +33,7 @@ def scraper(username = None, maxPostLimit = None, maxCommentLimit = None, set_no
                 if i > maxCommentLimit:
                     break
             likes = post.likes
-            sleep(10)
+            time.sleep(10)
             hashtagList = ' '.join([hashtag for hashtag in post.caption_hashtags])
 			# print(hashtagList)
             if listOfComments and hashtagList:
@@ -88,4 +88,4 @@ if __name__ == '__main__':
         scraper(user,maxPostLimit,maxCommentLimit, set_no)
 
         set_no += 1
-        sleep(20)
+        time.sleep(20)
