@@ -52,8 +52,8 @@ def scraper(username = None, maxPostLimit = None, maxCommentLimit = None, set_no
 
 if __name__ == '__main__':
 
-    username_list = ['cdcgov', 'who', 'teenvogue', 'cnn', 'wsj', 'financialtimes', 'narendramodi', 'the_hindu', 'ndtv', 'unitedntions', 'colorpalette.cinema', 'btsport', 'espn', 'blklivesmatter', 'discovery', 'enews', 'instantbollywood', 'gadgetflow' , 'nvidia']
-    set_no = 1
+    username_list = ['cnn', 'wsj', 'financialtimes', 'narendramodi', 'the_hindu', 'ndtv', 'unitedntions', 'colorpalette.cinema', 'btsport', 'espn', 'blklivesmatter', 'discovery', 'enews', 'instantbollywood', 'gadgetflow' , 'nvidia']
+    set_no = 4
 
     for u in username_list:
 
