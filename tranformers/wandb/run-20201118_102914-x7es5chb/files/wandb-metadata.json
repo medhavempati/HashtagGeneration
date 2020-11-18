@@ -1,0 +1,24 @@
+{
+    "os": "Linux-5.4.0-52-generic-x86_64-with-glibc2.10",
+    "python": "3.8.5",
+    "heartbeatAt": "2020-11-18T04:59:15.385603",
+    "startedAt": "2020-11-18T04:59:14.158137",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/home/medha/.local/share/jupyter/runtime/kernel-a1ae120b-e007-4b0a-af69-d0d45ac53a3f.json"
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/medhavempati/HashtagGeneration.git",
+        "commit": "22bbdfffa69e9d420a8da475583af4d1fb584e37"
+    },
+    "email": "vmedha411@gmail.com",
+    "root": "/home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration",
+    "host": "medha-HP-Pavilion-Laptop-15-cs0xxx",
+    "username": "medha",
+    "executable": "/home/medha/anaconda3/envs/transformers/bin/python"
+}

@@ -1,0 +1,175 @@
+2020-11-18 11:28:05,632 INFO    MainThread:6101 [internal.py:wandb_internal():63] W&B internal server running at pid: 6101
+2020-11-18 11:28:05,634 DEBUG   HandlerThread:6101 [handler.py:handle_request():55] handle_request: check_version
+2020-11-18 11:28:05,634 DEBUG   SenderThread:6101 [sender.py:send():90] send: header
+2020-11-18 11:28:05,634 DEBUG   SenderThread:6101 [sender.py:send():90] send: request
+2020-11-18 11:28:05,634 DEBUG   SenderThread:6101 [sender.py:send_request():99] send_request: check_version
+2020-11-18 11:28:05,635 INFO    WriterThread:6101 [datastore.py:open_for_write():76] open: /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/run-1r7qpioe.wandb
+2020-11-18 11:28:05,636 DEBUG   Thread-4  :6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): pypi.org:443
+2020-11-18 11:28:05,778 DEBUG   Thread-4  :6101 [connectionpool.py:_make_request():452] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 51661
+2020-11-18 11:28:05,816 DEBUG   SenderThread:6101 [sender.py:send():90] send: run
+2020-11-18 11:28:05,851 DEBUG   SenderThread:6101 [cmd.py:execute():718] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-11-18 11:28:05,881 DEBUG   SenderThread:6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-18 11:28:06,274 DEBUG   SenderThread:6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-18 11:28:06,283 INFO    SenderThread:6101 [dir_watcher.py:__init__():164] watching files in: /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/files
+2020-11-18 11:28:06,283 INFO    SenderThread:6101 [sender.py:_start_run_threads():487] run started: 1r7qpioe with start time 1605679085
+2020-11-18 11:28:06,284 DEBUG   SenderThread:6101 [sender.py:send():90] send: summary
+2020-11-18 11:28:06,284 DEBUG   HandlerThread:6101 [handler.py:handle_request():55] handle_request: run_start
+2020-11-18 11:28:06,285 INFO    SenderThread:6101 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-18 11:28:06,291 DEBUG   HandlerThread:6101 [cmd.py:execute():718] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-11-18 11:28:06,304 DEBUG   HandlerThread:6101 [cmd.py:execute():718] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration, universal_newlines=False, shell=None, istream=None)
+2020-11-18 11:28:06,661 DEBUG   SenderThread:6101 [sender.py:send():90] send: files
+2020-11-18 11:28:06,661 INFO    SenderThread:6101 [sender.py:_save_file():568] saving file wandb-metadata.json with policy now
+2020-11-18 11:28:06,665 DEBUG   Thread-11 :6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-18 11:28:06,665 DEBUG   HandlerThread:6101 [handler.py:handle_request():55] handle_request: status
+2020-11-18 11:28:06,666 DEBUG   SenderThread:6101 [sender.py:send():90] send: request
+2020-11-18 11:28:06,666 DEBUG   SenderThread:6101 [sender.py:send_request():99] send_request: status
+2020-11-18 11:28:06,667 DEBUG   SenderThread:6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-18 11:28:07,014 DEBUG   SenderThread:6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-18 11:28:07,037 DEBUG   Thread-11 :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-18 11:28:07,042 DEBUG   Thread-11 :6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-18 11:28:07,284 INFO    Thread-8  :6101 [dir_watcher.py:_on_file_created():212] file/dir created: /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/files/wandb-summary.json
+2020-11-18 11:28:07,285 INFO    Thread-8  :6101 [dir_watcher.py:_on_file_created():212] file/dir created: /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/files/output.log
+2020-11-18 11:28:07,285 INFO    Thread-8  :6101 [dir_watcher.py:_on_file_created():212] file/dir created: /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/files/requirements.txt
+2020-11-18 11:28:07,285 INFO    Thread-8  :6101 [dir_watcher.py:_on_file_created():212] file/dir created: /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/files/wandb-metadata.json
+2020-11-18 11:28:07,776 DEBUG   Thread-11 :6101 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mmvv/Paraphrasing%20with%20BART/1r7qpioe/wandb-metadata.json?Expires=1605765486&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=Xf207EGRD82emQK4Te4ms49KhEfHduWl1itHuh5BAv8hqLPztTZEtBA4qdEiXXAkDReDpZ4rY023WVlNoVdRMCebDy%2FdLmp4tniuxEaSQl7VeL9CeKkDkhdpjY3gqYBRQs6yeh9ta7S716bakvCU1bxg12fI4oOBXbtnFuMgl0wiIkvkAzAvVYRYqXlGf8z3dmywLK4VVjwV1cmWnfbQKSoUENNdyy5YN5oRoeIsX9NLyh3SMBjTDbZP4rjuE5bcjwF6UlNTGeYeZWoD%2FCHYssSZCuF8vbj5A9CRh%2Fu6ebdSCMW3WLTeFofbdFycfk46MblN6XNh5l%2FL3el2AE6LoA%3D%3D HTTP/1.1" 200 0
+2020-11-18 11:28:07,778 INFO    Thread-11 :6101 [upload_job.py:push():131] Uploaded file /tmp/tmpuhjl7zczwandb/2cpwmcwh-wandb-metadata.json
+2020-11-18 11:28:08,287 DEBUG   Thread-5  :6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-18 11:28:08,645 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:28:09,606 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:28:11,918 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:28:12,977 DEBUG   SenderThread:6101 [sender.py:send():90] send: files
+2020-11-18 11:28:12,977 INFO    SenderThread:6101 [sender.py:_save_file():568] saving file media/graph/g.r.a.p.h._.0_summary_47431d34.graph.json with policy now
+2020-11-18 11:28:12,978 DEBUG   SenderThread:6101 [sender.py:send():90] send: summary
+2020-11-18 11:28:12,979 INFO    SenderThread:6101 [sender.py:_save_file():568] saving file wandb-summary.json with policy end
+2020-11-18 11:28:12,983 DEBUG   Thread-12 :6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-18 11:28:13,286 INFO    Thread-8  :6101 [dir_watcher.py:_on_file_modified():225] file/dir modified: /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/files/wandb-summary.json
+2020-11-18 11:28:13,286 INFO    Thread-8  :6101 [dir_watcher.py:_on_file_created():212] file/dir created: /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/files/media/graph/g.r.a.p.h._.0_summary_47431d34.graph.json
+2020-11-18 11:28:13,286 INFO    Thread-8  :6101 [dir_watcher.py:_on_file_created():212] file/dir created: /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/files/media
+2020-11-18 11:28:13,287 INFO    Thread-8  :6101 [dir_watcher.py:_on_file_created():212] file/dir created: /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/files/media/graph
+2020-11-18 11:28:13,335 DEBUG   Thread-12 :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-18 11:28:13,341 DEBUG   Thread-12 :6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-18 11:28:14,018 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:28:14,046 DEBUG   Thread-12 :6101 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mmvv/Paraphrasing%20with%20BART/1r7qpioe/media/graph/g.r.a.p.h._.0_summary_47431d34.graph.json?Expires=1605765493&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=e3LVIFR%2FXg%2F2sK71HXKBmpxY2yyIeSjRDNCsq3InuFDrPGg75XHxuyEuRGVHNWpuFfkNyGwGSKvVRKkDBpyNRsagN0daHiMj4sVGqWOMX0Ohhw0eqOjcVv47PN9rFR5nQmiTZhqEmnz4e9FY8BJ0Mq%2BZR3J1OigiZl%2BaY8Locu9kfHHENTag5P7xqHcqjeF0kt4U9yOXAp9VhejHsS94blIoDPXHXnHFuAerDV0ebN9nUAQ4ZlXwQ5Ln7j%2FRjXhG%2FT2R9ixaswGD%2Fxt5U8IBsTP5Bif%2BlCJYtNEWukHLcDJvCzNtgrBL90FOJpTjqR3mT6APJYma%2FyyCxP3ZifMK5A%3D%3D HTTP/1.1" 200 0
+2020-11-18 11:28:14,048 INFO    Thread-12 :6101 [upload_job.py:push():131] Uploaded file /tmp/tmpuhjl7zczwandb/3pg6liwc-media/graph/g.r.a.p.h._.0_summary_47431d34.graph.json
+2020-11-18 11:28:14,336 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:28:18,429 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:28:18,744 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:28:22,025 DEBUG   HandlerThread:6101 [handler.py:handle_request():55] handle_request: status
+2020-11-18 11:28:22,025 DEBUG   SenderThread:6101 [sender.py:send():90] send: request
+2020-11-18 11:28:22,025 DEBUG   SenderThread:6101 [sender.py:send_request():99] send_request: status
+2020-11-18 11:28:22,029 DEBUG   SenderThread:6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-18 11:28:22,463 DEBUG   SenderThread:6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-18 11:28:22,844 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:28:23,157 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:28:34,274 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:28:37,543 DEBUG   HandlerThread:6101 [handler.py:handle_request():55] handle_request: status
+2020-11-18 11:28:37,544 DEBUG   SenderThread:6101 [sender.py:send():90] send: request
+2020-11-18 11:28:37,544 DEBUG   SenderThread:6101 [sender.py:send_request():99] send_request: status
+2020-11-18 11:28:37,550 DEBUG   SenderThread:6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-18 11:28:38,326 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:28:48,088 DEBUG   SenderThread:6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-18 11:28:48,093 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:28:48,093 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:28:48,464 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:28:49,959 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:28:52,287 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:28:54,383 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:28:54,688 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:28:58,804 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:28:59,121 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:29:03,435 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:29:03,589 DEBUG   HandlerThread:6101 [handler.py:handle_request():55] handle_request: status
+2020-11-18 11:29:03,641 DEBUG   SenderThread:6101 [sender.py:send():90] send: request
+2020-11-18 11:29:03,642 DEBUG   SenderThread:6101 [sender.py:send_request():99] send_request: status
+2020-11-18 11:29:03,683 DEBUG   SenderThread:6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-18 11:29:03,816 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:29:18,346 DEBUG   SenderThread:6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-18 11:29:23,186 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:29:24,135 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:29:26,400 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:29:26,555 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:29:30,976 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:29:35,400 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:29:35,727 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:29:39,580 DEBUG   HandlerThread:6101 [handler.py:handle_request():55] handle_request: status
+2020-11-18 11:29:39,580 DEBUG   SenderThread:6101 [sender.py:send():90] send: request
+2020-11-18 11:29:39,581 DEBUG   SenderThread:6101 [sender.py:send_request():99] send_request: status
+2020-11-18 11:29:39,586 DEBUG   SenderThread:6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-18 11:29:48,840 DEBUG   SenderThread:6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-18 11:29:49,027 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:29:49,027 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:29:49,328 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:29:49,335 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:29:53,747 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:29:58,158 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:30:02,577 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:30:02,882 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:30:04,029 DEBUG   HandlerThread:6101 [handler.py:handle_request():55] handle_request: status
+2020-11-18 11:30:04,029 DEBUG   SenderThread:6101 [sender.py:send():90] send: request
+2020-11-18 11:30:04,029 DEBUG   SenderThread:6101 [sender.py:send_request():99] send_request: status
+2020-11-18 11:30:04,036 DEBUG   SenderThread:6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-18 11:30:05,335 DEBUG   SenderThread:6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-18 11:30:06,992 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:30:11,407 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:30:15,825 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:30:16,143 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:30:20,246 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:30:20,342 DEBUG   HandlerThread:6101 [handler.py:handle_request():55] handle_request: status
+2020-11-18 11:30:20,343 DEBUG   SenderThread:6101 [sender.py:send():90] send: request
+2020-11-18 11:30:20,343 DEBUG   SenderThread:6101 [sender.py:send_request():99] send_request: status
+2020-11-18 11:30:20,348 DEBUG   SenderThread:6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-18 11:30:21,140 DEBUG   SenderThread:6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-18 11:30:24,669 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:30:29,091 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:30:29,431 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:30:33,503 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:30:36,146 DEBUG   HandlerThread:6101 [handler.py:handle_request():55] handle_request: status
+2020-11-18 11:30:36,146 DEBUG   SenderThread:6101 [sender.py:send():90] send: request
+2020-11-18 11:30:36,146 DEBUG   SenderThread:6101 [sender.py:send_request():99] send_request: status
+2020-11-18 11:30:36,334 DEBUG   SenderThread:6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-18 11:30:37,906 DEBUG   SenderThread:6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-18 11:30:37,916 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:30:42,340 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:30:42,653 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:30:46,764 DEBUG   SenderThread:6101 [sender.py:send():90] send: stats
+2020-11-18 11:36:20,669 DEBUG   HandlerThread:6101 [handler.py:handle_request():55] handle_request: status
+2020-11-18 11:40:56,024 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:40:57,275 WARNING MainThread:6101 [internal.py:is_dead():285] Internal process exiting, parent pid 6051 disappeared
+2020-11-18 11:40:57,334 DEBUG   SenderThread:6101 [sender.py:send():90] send: request
+2020-11-18 11:41:00,185 ERROR   MainThread:6101 [internal.py:wandb_internal():113] Internal process shutdown.
+2020-11-18 11:41:00,404 DEBUG   SenderThread:6101 [sender.py:send_request():99] send_request: status
+2020-11-18 11:41:01,690 INFO    WriterThread:6101 [datastore.py:close():257] close: /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/run-1r7qpioe.wandb
+2020-11-18 11:41:01,691 INFO    HandlerThread:6101 [handler.py:finish():271] shutting down handler
+2020-11-18 11:41:02,548 DEBUG   SenderThread:6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-18 11:41:07,559 DEBUG   SenderThread:6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-18 11:41:07,564 INFO    SenderThread:6101 [sender.py:finish():630] shutting down sender
+2020-11-18 11:41:07,564 INFO    SenderThread:6101 [dir_watcher.py:finish():278] shutting down directory watcher
+2020-11-18 11:41:07,693 INFO    SenderThread:6101 [dir_watcher.py:finish():308] scan: /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/files
+2020-11-18 11:41:07,693 INFO    SenderThread:6101 [dir_watcher.py:finish():314] scan save: /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/files/wandb-summary.json wandb-summary.json
+2020-11-18 11:41:07,694 INFO    SenderThread:6101 [dir_watcher.py:finish():314] scan save: /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/files/config.yaml config.yaml
+2020-11-18 11:41:07,701 INFO    SenderThread:6101 [dir_watcher.py:finish():314] scan save: /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/files/output.log output.log
+2020-11-18 11:41:07,701 DEBUG   Thread-13 :6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-18 11:41:07,704 INFO    SenderThread:6101 [dir_watcher.py:finish():314] scan save: /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/files/wandb-metadata.json wandb-metadata.json
+2020-11-18 11:41:07,704 INFO    SenderThread:6101 [dir_watcher.py:finish():314] scan save: /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/files/requirements.txt requirements.txt
+2020-11-18 11:41:07,704 DEBUG   Thread-14 :6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-18 11:41:07,707 DEBUG   Thread-15 :6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-11-18 11:41:07,707 INFO    SenderThread:6101 [dir_watcher.py:finish():314] scan save: /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/files/media/graph/g.r.a.p.h._.0_summary_47431d34.graph.json media/graph/g.r.a.p.h._.0_summary_47431d34.graph.json
+2020-11-18 11:41:07,708 INFO    SenderThread:6101 [file_pusher.py:finish():169] shutting down file pusher
+2020-11-18 11:41:07,708 INFO    SenderThread:6101 [file_pusher.py:join():174] waiting for file pusher
+2020-11-18 11:41:08,094 DEBUG   Thread-14 :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-18 11:41:08,099 DEBUG   Thread-15 :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-18 11:41:08,107 DEBUG   Thread-13 :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2020-11-18 11:41:09,039 DEBUG   Thread-14 :6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-18 11:41:09,040 DEBUG   Thread-13 :6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-18 11:41:09,042 DEBUG   Thread-15 :6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-11-18 11:41:10,049 DEBUG   Thread-14 :6101 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mmvv/Paraphrasing%20with%20BART/1r7qpioe/config.yaml?Expires=1605766267&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=FLIypN2ZKp%2FV0vdWCQ%2FyR2Ti6LsTGTB0sEtJq5xQTn8%2BSXMI3t3LpsEJgEGRn9NPutSfmCDu07qoiWfNpucDzIsNVfDKA4XEtnp5k5eaiPqUG3jyhBgXUW7OhdAOUzdboxQNRfrd%2BNY2bAzo%2FRWRhnnM%2BI5fiSduMSLneSD3jqbIwcigs8XhvFpD5ad4KfQbYZXRo4rI0X0Q8c%2FvqRQ%2Fcapg0%2F%2F7ltu9CPkMDhB%2BP3aTylfmUre3vvdgl9bw25ZEGRQUlWs6Gx4e9VRx6LT2JqLhlmfiSOBfWIm%2FbEBLT%2BqzqdLRAgHNaE8JfNpyjX%2BwI904r2jtERFQFlqu0YCWog%3D%3D HTTP/1.1" 200 0
+2020-11-18 11:41:10,052 INFO    Thread-14 :6101 [upload_job.py:push():131] Uploaded file /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/files/config.yaml
+2020-11-18 11:41:10,061 DEBUG   Thread-15 :6101 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mmvv/Paraphrasing%20with%20BART/1r7qpioe/requirements.txt?Expires=1605766267&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=odIFoW%2FVvpambJYVo%2B2wFfSnisqu7RygLGJZ844M7AVr5Gq8flYKMHwix2G%2Fob0y2x098ve7vmGGIWLZK6lV7nNRFl9CA%2FksMDdNnLpIswk4eCPdcAtjvpHU2vtKko6RJSFE8%2FRYMicCFxB%2BDt2n42PLArvJLvufyNaCmZpqjXypLyMLoivt3Jd6gUw0XCGdKQQtsjn8Pm3wIAp%2F%2Bju%2BjkEMRE7hM7gbB7YWYgW0Gi7azEoCrE9cEBWIrtisBTjRNqaZZYm9ZzxAswVkrIzeIAjIcHtJXS3Z0coSq4cg9fJGq9FBRYzey1B9d9gy2H7YOh7dGWswTFaQ8zL0ZGvhwQ%3D%3D HTTP/1.1" 200 0
+2020-11-18 11:41:10,064 INFO    Thread-15 :6101 [upload_job.py:push():131] Uploaded file /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/files/requirements.txt
+2020-11-18 11:41:10,077 DEBUG   Thread-13 :6101 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mmvv/Paraphrasing%20with%20BART/1r7qpioe/wandb-summary.json?Expires=1605766267&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=ZmjxjfM20SJGQR3iPSRsv4%2Bgds158ZHpDlPxqn4aHB2SQHktb5vTb5PmVFcx4j1MaN72jscYxWb%2BCyqs2ip3oW4WZq6a0Ddgk2rOOjP8ON%2FtGRO7ut2ivLdlGpw1kRTfenD7iMGE%2FwHu3z%2Bo433Z0KNmXoYuuvgWTmKKFRJlsprfwEPbNamW%2BC4xYq1EKBzP9RLQijmmNUuXzkNNqZM4Sp01xt%2FIioznKnjaZQM6fRhJm0v%2FDZTZInHQvPQLGHZwV002Gk%2B%2FlYeAMp1XpBB5E0VOkktOd9tTDKCBkIiaV5I4yPTDTZ0Yzv8PZpbATSYtcgm5lBJo3QGHP7QMlatP%2BA%3D%3D HTTP/1.1" 200 0
+2020-11-18 11:41:10,081 INFO    Thread-13 :6101 [upload_job.py:push():131] Uploaded file /home/medha/College/Sem5/IRE/Major_Project/HashtagGeneration/bert/wandb/run-20201118_112804-1r7qpioe/files/wandb-summary.json
+2020-11-18 11:41:13,105 WARNING Thread-5  :6101 [util.py:request_with_retry():687] requests_with_retry encountered retryable exception: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')). args: ('https://api.wandb.ai/files/mmvv/Paraphrasing with BART/1r7qpioe/file_stream',), kwargs: {'json': {'complete': False, 'failed': False}}
+2020-11-18 11:41:15,438 DEBUG   Thread-5  :6101 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (2): api.wandb.ai:443
+2020-11-18 11:41:15,809 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:41:16,113 DEBUG   Thread-5  :6101 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/mmvv/Paraphrasing%20with%20BART/1r7qpioe/file_stream HTTP/1.1" 200 None
+2020-11-18 11:41:16,116 INFO    MainThread:6101 [internal.py:handle_exit():138] Internal process exited
